@@ -1,0 +1,32 @@
+.box {
+    background-color: gray;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    grid-template-rows: repeat(3, 200px) 50px 50px;
+}
+
+#box-1{
+    grid-row: span 5;
+}
+
+/* #box-11 {
+    grid-column: span 3;
+}
+
+#box-12 {
+    grid-column: span 3;
+} */
+
+/* OR */
+#box-11, #box-12 {
+    grid-column: span 3;
+}
+
+#box-6, #box-7, #box-9, #box-10 {
+    background-color: rgb(245, 75, 56);
+}
